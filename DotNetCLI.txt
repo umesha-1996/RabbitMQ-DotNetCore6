@@ -1,0 +1,30 @@
+create solution
+dotnet new sln -n FormulaAirline
+
+create web api
+dotnet new webapi -n "FormularAirline.API"
+
+link(add) web api to solution
+dotnet sln FormulaAirline.sln add FormularAirline.API/FormularAirline.API.csproj
+
+Build 
+dotnet build
+
+create console
+dotnet new console -n "FormularAirline.TicketProcessing"
+
+link console to solution
+dotnet sln FormulaAirline.sln add FormularAirline.TicketProcessing/FormularAirline.TicketProcessing.csproj
+
+dotnet build( build 2 project with single solution)
+
+added RabbitMQ Packge
+dotnet add package RabbitMQ.Client
+
+
+run the project
+dotnet run
+
+run the doker
+docker-compose up
+
